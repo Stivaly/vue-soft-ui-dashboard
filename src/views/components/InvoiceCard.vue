@@ -6,7 +6,7 @@
           <h6 class="mb-0">Invoices</h6>
         </div>
         <div class="col-6 text-end">
-          <soft-button color="success" size="sm" variant="outline"
+          <soft-button color="primary" size="sm" variant="outline"
             >View All</soft-button
           >
         </div>

@@ -1,7 +1,7 @@
 <template>
   <div
     id="sidenavCard"
-    class="shadow-none card card-background card-background-mask-secondary"
+    class="shadow-none card card-background card-background-mask-secondary bg-gradient-primary"
   >
     <div
       class="full-background"
@@ -13,7 +13,7 @@
       >
         <i
           id="sidenavCardIcon"
-          class="top-0 text-lg text-dark text-gradient"
+          class="top-0 text-lg text-dark text-gradient "
           aria-hidden="true"
           :class="icon"
         ></i>

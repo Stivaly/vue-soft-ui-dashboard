@@ -5,14 +5,15 @@
         <i :class="getIcon(icon)"></i>
       </span>
       <input
+        v-model="internalValue"
         :id="id"
         :type="type"
         class="form-control"
         :class="getClasses(size, success, error)"
         :name="name"
-        :value="value"
         :placeholder="placeholder"
-        :isRequired="isRequired"
+        :required="isRequired"
+        @input="updateValue"
       />
       <span v-if="iconDir === 'right'" class="input-group-text">
         <i :class="getIcon(icon)"></i>
@@ -70,6 +71,16 @@ export default {
       default: false,
     },
   },
+  data() {
+    return {
+      internalValue: this.value,
+    };
+  },
+  watch: {
+    value(newVal) {
+      this.internalValue = newVal;
+    },
+  },
   methods: {
     getClasses: (size, success, error) => {
       let sizeValue, isValidValue;
@@ -88,6 +99,9 @@ export default {
     },
     getIcon: (icon) => (icon ? icon : null),
     hasIcon: (icon) => (icon ? "input-group" : null),
+    updateValue(event) {
+      this.$emit('input', event.target.value);
+    },
   },
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
   <button
+    :type="type"
     class="btn mb-0"
     :class="getClasses(variant, color, size, fullWidth, active)"
   >
@@ -26,6 +27,10 @@ export default {
     fullWidth: {
       type: Boolean,
       default: false,
+    },
+    type: {
+      type: String,
+      default: "button",
     },
     active: {
       type: Boolean,

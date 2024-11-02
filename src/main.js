@@ -20,6 +20,11 @@ import router from "./router";
 import "./assets/css/nucleo-icons.css";
 import "./assets/css/nucleo-svg.css";
 import SoftUIDashboard from "./soft-ui-dashboard";
+import axios from 'axios'
+
+axios.defaults.withCredentials = false;
+axios.defaults.baseURL = 'https://goalstats-api.onrender.com/api'
+
 
 const appInstance = createApp(App);
 appInstance.use(store);

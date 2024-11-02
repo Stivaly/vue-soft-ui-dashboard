@@ -29,7 +29,7 @@ export default {
   props: {
     color: {
       type: String,
-      default: "success",
+      default: "primary",
     },
     icon: {
       type: String,

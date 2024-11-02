@@ -240,7 +240,7 @@
                   <span class="text-xs font-weight-bold mx-2">100%</span>
                   <div>
                     <soft-progress
-                      color="success"
+                      color="primary"
                       class="mx-auto"
                       variant="gradient"
                       :percentage="100"
@@ -313,7 +313,7 @@
                   <span class="text-xs font-weight-bold mx-2">100%</span>
                   <div>
                     <soft-progress
-                      color="success"
+                      color="primary"
                       class="mx-auto"
                       variant="gradient"
                       :percentage="100"

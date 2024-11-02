@@ -87,7 +87,7 @@
               date: '23 March 2020, at 04:30 AM',
               amount: '+ $ 2,000',
               icon: 'fa-arrow-up',
-              color: 'success',
+              color: 'primary',
             },
           ]"
         >
@@ -99,21 +99,21 @@
                 date: '26 March 2020, at 13:45 PM',
                 amount: '+ $ 750',
                 icon: 'fa-arrow-up',
-                color: 'success',
+                color: 'primary',
               },
               {
                 title: 'HubSpot',
                 date: '26 March 2020, at 12:30 PM',
                 amount: '+ $ 1,000',
                 icon: 'fa-arrow-up',
-                color: 'success',
+                color: 'primary',
               },
               {
                 title: 'Creative Tim',
                 date: '26 March 2020, at 08:30 AM',
                 amount: '+ $ 2,500',
                 icon: 'fa-arrow-up',
-                color: 'success',
+                color: 'primary',
               },
               {
                 title: 'Webflow',

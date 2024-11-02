@@ -23,11 +23,10 @@
               {{ typeof title === "string" ? title : title.text }}
             </p>
             <h5 class="mb-0 font-weight-bolder" :class="value.color">
-              {{
-                typeof value === "string" || typeof value === "number"
-                  ? value
-                  : value.text
-              }}
+              <slot name="value-content">
+                {{ formattedValue }}
+              </slot>
+            </h5>
               <span
                 class="text-sm font-weight-bolder"
                 :class="percentage.color"
@@ -45,7 +44,7 @@
                     : ""
                 }}
               </span>
-            </h5>
+            
           </div>
         </div>
       </div>
@@ -57,6 +56,10 @@
 export default {
   name: "MiniStatisticsCard",
   props: {
+    isHtml: {
+      type: Boolean,
+      default: false,
+    },
     directionReverse: {
       type: Boolean,
       default: false,
@@ -90,7 +93,7 @@ export default {
         type: String,
       },
       default: () => ({
-        color: "text-success",
+        color: "text-primary",
       }),
     },
     icon: {
@@ -108,6 +111,11 @@ export default {
     classContent: {
       type: String,
       default: "",
+    },
+  },
+  computed: {
+    formattedValue() {
+      return typeof this.value === 'object' && this.value.text ? this.value.text : this.value;
     },
   },
   data() {

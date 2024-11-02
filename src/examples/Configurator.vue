@@ -46,9 +46,9 @@
               @click="sidebarColor('info')"
             ></span>
             <span
-              class="badge filter bg-gradient-success"
-              data-color="success"
-              @click="sidebarColor('success')"
+              class="badge filter bg-gradient-primary"
+              data-color="primary"
+              @click="sidebarColor('primary')"
             ></span>
             <span
               class="badge filter bg-gradient-warning"
@@ -70,7 +70,7 @@
         <div class="d-flex">
           <button
             id="btn-transparent"
-            class="px-3 mb-2 btn bg-gradient-success w-100"
+            class="px-3 mb-2 btn bg-gradient-primary w-100"
             :class="ifTransparent === 'bg-transparent' ? 'active' : ''"
             @click="sidebarType('bg-transparent')"
           >

@@ -1,6 +1,7 @@
 <template>
   <!-- Navbar -->
   <nav
+    v-if="!$route.meta.hideNavbar"
     class="top-0 navbar navbar-expand-lg position-absolute z-index-3"
     :class="isBlur ? isBlur : 'shadow-none my-2 navbar-transparent w-100'"
   >
@@ -80,7 +81,7 @@
             <a
               href="https://www.creative-tim.com/product/vue-soft-ui-dashboard"
               class="btn btn-sm btn-round mb-0 me-1"
-              :class="isBlur ? 'bg-gradient-dark' : 'bg-gradient-success'"
+              :class="isBlur ? 'bg-gradient-dark' : 'bg-gradient-primary'"
               >Free download</a
             >
           </li>

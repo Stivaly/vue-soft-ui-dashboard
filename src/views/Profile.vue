@@ -8,7 +8,7 @@
         backgroundPositionY: '50%',
       }"
     >
-      <span class="mask bg-gradient-success opacity-6"></span>
+      <span class="mask bg-gradient-primary opacity-6"></span>
     </div>
     <div class="mx-4 overflow-hidden card card-body blur shadow-blur mt-n6">
       <div class="row gx-4">
@@ -461,7 +461,7 @@
                   },
                 ]"
                 :action="{
-                  color: 'success',
+                  color: 'primary',
                   label: 'View Project',
                 }"
               />
@@ -491,7 +491,7 @@
                   },
                 ]"
                 :action="{
-                  color: 'success',
+                  color: 'primary',
                   label: 'View Project',
                 }"
               />
@@ -521,7 +521,7 @@
                   },
                 ]"
                 :action="{
-                  color: 'success',
+                  color: 'primary',
                   label: 'View Project',
                 }"
               />

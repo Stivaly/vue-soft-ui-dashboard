@@ -17,7 +17,7 @@ export default {
     },
     color: {
       type: String,
-      default: "success",
+      default: "primary",
     },
     variant: {
       type: String,

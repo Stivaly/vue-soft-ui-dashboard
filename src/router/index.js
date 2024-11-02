@@ -18,11 +18,13 @@ const routes = [
     path: "/dashboard",
     name: "Dashboard",
     component: Dashboard,
+    meta: { hideNavbar: false },
   },
   {
-    path: "/tables",
-    name: "Tables",
+    path: "/usuarios",
+    name: "Usuarios",
     component: Tables,
+    meta: { hideNavbar: false },
   },
   {
     path: "/billing",
@@ -38,6 +40,7 @@ const routes = [
     path: "/profile",
     name: "Profile",
     component: Profile,
+    meta: { hideNavbar: false },
   },
   {
     path: "/rtl-page",
@@ -48,11 +51,13 @@ const routes = [
     path: "/sign-in",
     name: "Sign In",
     component: SignIn,
+    meta: { hideNavbar: true },
   },
   {
     path: "/sign-up",
     name: "Sign Up",
     component: SignUp,
+    meta: { hideNavbar: true },
   },
 ];
 

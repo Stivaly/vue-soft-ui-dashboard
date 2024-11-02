@@ -53,7 +53,7 @@ export default {
   props: {
     color: {
       type: String,
-      default: "success",
+      default: "primary",
     },
     song: {
       type: Object,

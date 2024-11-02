@@ -97,7 +97,7 @@
                   <span class="me-2 text-xs font-weight-bold">100%</span>
                   <div>
                     <soft-progress
-                      color="success"
+                      color="primary"
                       variant="gradient"
                       :percentage="100"
                     />
@@ -183,7 +183,7 @@
                   <span class="me-2 text-xs font-weight-bold">0%</span>
                   <div>
                     <soft-progress
-                      color="success"
+                      color="primary"
                       variant="gradient"
                       :percentage="0"
                     />
@@ -269,7 +269,7 @@
                   <span class="me-2 text-xs font-weight-bold">100%</span>
                   <div>
                     <soft-progress
-                      color="success"
+                      color="primary"
                       variant="gradient"
                       :percentage="100"
                     />
